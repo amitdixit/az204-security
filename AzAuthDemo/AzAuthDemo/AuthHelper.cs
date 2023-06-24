@@ -27,9 +27,9 @@ internal static class AuthHelper
 
     internal static void DownloadBlobWithAzureAdAuth()
     {
-        string tenantId = "30996a51-c766-47a0-a51a-e86a78533c3c";
-        string clientId = "b47e7ea0-50b5-406d-a439-7faece8aa84e";
-        string clientSecrect = "GjE8Q~d4KqFTrFB~MZP4gE1fX.O4rJWCls7wscoa";
+        string tenantId = "";
+        string clientId = "";
+        string clientSecrect = "";
         string blobUrl = "https://authdemosaakd.blob.core.windows.net/data/sample.yml";
 
         var clientCredential = new ClientSecretCredential(tenantId, clientId, clientSecrect);
@@ -41,9 +41,9 @@ internal static class AuthHelper
     internal static void GetAzureSecretFromVault()
     {
         //Ensure that the Application Object has access to Secrets Permission on the Azure KeyVaults (Read and List)
-        string tenantId = "30996a51-c766-47a0-a51a-e86a78533c3c";
-        string clientId = "b47e7ea0-50b5-406d-a439-7faece8aa84e";
-        string clientSecrect = "GjE8Q~d4KqFTrFB~MZP4gE1fX.O4rJWCls7wscoa";
+        string tenantId = "";
+        string clientId = "";
+        string clientSecrect = "";
 
 
         string keyVaultUrl = "https://authdemokeyvaultakd.vault.azure.net/";
@@ -62,9 +62,9 @@ internal static class AuthHelper
     internal static void GetAzureKeysFromVault()
     {
         //Ensure that the Application Object has access to Keys Permission on the Azure KeyVaults (Read,List,Encrypt,Decrypt)
-        string tenantId = "30996a51-c766-47a0-a51a-e86a78533c3c";
-        string clientId = "b47e7ea0-50b5-406d-a439-7faece8aa84e";
-        string clientSecrect = "GjE8Q~d4KqFTrFB~MZP4gE1fX.O4rJWCls7wscoa";
+        string tenantId = "";
+        string clientId = "";
+        string clientSecrect = "";
 
 
         string keyVaultUrl = "https://authdemokeyvaultakd.vault.azure.net/";
